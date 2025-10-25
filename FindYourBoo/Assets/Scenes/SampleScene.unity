@@ -1834,7 +1834,7 @@ GameObject:
   - component: {fileID: 1572555303}
   - component: {fileID: 1572555305}
   - component: {fileID: 1572555307}
-  - component: {fileID: 1572555306}
+  - component: {fileID: 1572555308}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1906,7 +1906,7 @@ Transform:
   m_GameObject: {fileID: 1572555300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.12, y: 0.849, z: 0.801}
+  m_LocalPosition: {x: -1.12, y: 0.056, z: -0.26}
   m_LocalScale: {x: 1.3082159, y: 1.3082159, z: 1.3082159}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1924,7 +1924,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e7e3f413fd5974a8c874f637c0697c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  moveSpeed: 100
+  rb: {fileID: 1572555307}
 --- !u!114 &1572555305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2043,27 +2044,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!65 &1572555306
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572555300}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.5657713, y: 0.8768453, z: 0.15202841}
-  m_Center: {x: -0.23302647, y: 0.082189396, z: -0.06428104}
 --- !u!54 &1572555307
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2088,9 +2068,32 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 48
+  m_Interpolate: 0
+  m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!136 &1572555308
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572555300}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.43291625
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.56708336}
 --- !u!1 &1683649521
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,7 +2190,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
+  m_Color: {r: 1, g: 0.6472527, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2450,6 +2453,7 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1358192278}
   - {fileID: 107780331}
+  - {fileID: 660092211}
   - {fileID: 785413159}
   - {fileID: 1572555302}
   - {fileID: 105149939}
@@ -2457,4 +2461,3 @@ SceneRoots:
   - {fileID: 1683649522}
   - {fileID: 997723630}
   - {fileID: 1484891990}
-  - {fileID: 660092211}
