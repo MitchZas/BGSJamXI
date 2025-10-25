@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private GameObject EPrompt;
+    
+    private void OnCollisionEnter(Collision other)
     {
-        
+        if (other.gameObject.CompareTag("Player"))
+        {
+            EPrompt.SetActive(true);
+            Debug.Log("Collided");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionExit(Collision other)
     {
-        
+        if (other.gameObject.CompareTag("Player"))
+        {
+            EPrompt.SetActive(false);
+            Debug.Log("Left");
+        }
     }
 }
