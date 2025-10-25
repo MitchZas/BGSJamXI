@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenuScript : MonoBehaviour
 {
@@ -39,11 +40,14 @@ public class PauseMenuScript : MonoBehaviour
 
     public void LoadOptions()
     {
+        // TODO: Add back in when we have options
+        //SceneManager.LoadScene();
         Debug.Log("Loading Options");
     }
 
     public void QuitGame()
     {
-        Debug.Log("Quitting Game");
+        Application.Quit();
+        //Debug.Log("Quitting Game");
     }
 }
