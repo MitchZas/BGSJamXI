@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 10f;
     private Vector2 move;
-    private float rotateSpeed = 0.15f;
+    //private float rotateSpeed = 0.15f;
 
     public void OnMove(InputAction.CallbackContext context)
     {
