@@ -11,6 +11,11 @@ public class Interact : MonoBehaviour
             EPrompt.SetActive(true);
             Debug.Log("Collided");
         }
+
+        if (gameObject.tag == "Suitor")
+        {
+            Debug.Log("Long Text");
+        }
     }
 
     private void OnCollisionExit(Collision other)
