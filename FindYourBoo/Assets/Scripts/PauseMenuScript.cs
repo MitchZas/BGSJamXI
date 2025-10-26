@@ -5,6 +5,7 @@ public class PauseMenuScript : MonoBehaviour
 {
     public static bool _gameIsPaused = false;
     public GameObject _pauseMenuUI;
+    public GameObject DialogueCloseCanvas;
 
     // Update is called once per frame
     void Update()
@@ -49,5 +50,10 @@ public class PauseMenuScript : MonoBehaviour
     {
         Application.Quit();
         //Debug.Log("Quitting Game");
+    }
+
+    public void CloseDialogueBox()
+    {
+        DialogueCloseCanvas.SetActive(false);
     }
 }

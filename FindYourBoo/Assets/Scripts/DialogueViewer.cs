@@ -13,6 +13,7 @@ public class DialogueViewer : MonoBehaviour
     [SerializeField] Button _prefab_btnResponse;
     [SerializeField] TMPro.TMP_Text _txtMessage;
     [SerializeField] DialogueController _dialogueController;
+    [SerializeField] private GameObject closeDialogueBox;
     DialogueController _controller;
 
     [DllImport("__Internal")]
@@ -60,8 +61,8 @@ public class DialogueViewer : MonoBehaviour
             }
             else
             {
-                // TODO: Add in code to close out the dialogue box
                 responceButton.GetComponentInChildren<TMPro.TMP_Text>().text = (string.Empty);
+                closeDialogueBox.SetActive(true);
             }
 
             responceButton.onClick.AddListener(delegate { OnNodeSelected(currentChoiceIndex); });
