@@ -26,6 +26,6 @@ public class PlayerController : MonoBehaviour
 
         //transform.Translate(movement * speed * Time.deltaTime);
 
-        rb.linearVelocity = new Vector3(move.x * moveSpeed * Time.deltaTime, 0f, move.y * moveSpeed * Time.deltaTime);
+        rb.linearVelocity = new Vector3(move.x * moveSpeed * Time.deltaTime, move.y * moveSpeed * Time.deltaTime, 0f);
     }
 }
