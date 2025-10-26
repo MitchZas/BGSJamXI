@@ -15,6 +15,7 @@ Why, hello there, darling. Don’t you look simply…. Ethereal this evening. I 
 
 :: Candlelight dinner, fine red wine, maybe some relaxing piano music, and end it was a moonlight walk.[[END]]
 Ahhh, a person of good taste. That sounds simply to die for. I hope we can meet again later. 
+[[x]]
 
 :: I just don’t accept compliments from weird creeps.
 *Gasps* How dare you insult me! Leave me at once! 
@@ -45,15 +46,19 @@ I’ll give you one more chance. Tell me, what would be your ideal date?
 
 :: Long walk through the cemetery, maybe have a nice picnic under the moonlight.[[END]]
 That does sound lovely. Though perhaps a bit boring. Being surrounded by the dead can be a bit dry as bone. Perhaps we will speak again. 
+[[x]]
 
 :: No, it’s not that! I swear! You’re just not really my type.[[END]]
 I am everyone’s type. But I suppose not everyone has taste. 
+[[x]]
 
 :: Not really….[[END]]
 Well, good luck finding love! You will clearly need it! 
+[[x]]
 
 :: Probably just playing video games and ordering pizzas.[[END]]
 Ugh… perhaps I was wrong about you. Maybe we do not have a connection. 
+[[x]]
 
 :: Thank you. I was dying to speak to you as well.\
 Now, what is a creature like you doing in a place like this?
