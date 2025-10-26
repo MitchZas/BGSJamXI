@@ -931,6 +931,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2052247253950584491, guid: 803f4609f6d75c34da63086ade9fc928, type: 3}
+      propertyPath: twineText
+      value: 
+      objectReference: {fileID: 4900000, guid: 13acfbe80534a7841a710eb5aac584e7, type: 3}
     - target: {fileID: 4742072091693921469, guid: 803f4609f6d75c34da63086ade9fc928, type: 3}
       propertyPath: m_LocalPosition.x
       value: 794.79425
@@ -1220,6 +1224,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1337723388}
     m_Modifications:
+    - target: {fileID: 117248316453101961, guid: 495b838645ee813458e773e9a065c28c, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 117248316453101961, guid: 495b838645ee813458e773e9a065c28c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 117248316453101961, guid: 495b838645ee813458e773e9a065c28c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 117248316453101961, guid: 495b838645ee813458e773e9a065c28c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1231068240131929754, guid: 495b838645ee813458e773e9a065c28c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1287,6 +1307,10 @@ PrefabInstance:
     - target: {fileID: 2993260983923049935, guid: 495b838645ee813458e773e9a065c28c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181958533405682612, guid: 495b838645ee813458e773e9a065c28c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4081365416858903510, guid: 495b838645ee813458e773e9a065c28c, type: 3}
       propertyPath: m_Pivot.y
@@ -1470,7 +1494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8832397693036323785, guid: 495b838645ee813458e773e9a065c28c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 95
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 9027832725446825611, guid: 495b838645ee813458e773e9a065c28c, type: 3}
       propertyPath: m_Name
@@ -2252,7 +2276,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -2990,7 +3014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e7e3f413fd5974a8c874f637c0697c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 250
+  moveSpeed: 500
   rb: {fileID: 1572555307}
 --- !u!114 &1572555305
 MonoBehaviour:
