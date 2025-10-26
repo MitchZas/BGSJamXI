@@ -1895,6 +1895,10 @@ PrefabInstance:
       propertyPath: _dialogueController
       value: 
       objectReference: {fileID: 609852665}
+    - target: {fileID: 8085104152794466232, guid: 495b838645ee813458e773e9a065c28c, type: 3}
+      propertyPath: playerControllerScript
+      value: 
+      objectReference: {fileID: 1572555303}
     - target: {fileID: 8246707563333787305, guid: 495b838645ee813458e773e9a065c28c, type: 3}
       propertyPath: m_Spacing
       value: 7
