@@ -33,6 +33,15 @@ public class DialogueController : MonoBehaviour
 
     public void ChooseResponse(int responseIndex)
     {
+        // TODO: This is where the response is chosen and I need to call the SetLove() function from Jonathan's code.
+        // Before you do any of the un-commented out code below, implement this code:
+        /*
+            int loveMeterPoints = curNode.responses[responseIndex].displayText == "GOOD" ? 10 : 
+                curNode.responses[responseIndex].displayText == "NEUTRAL" ? 5 : 0;
+            jonathansScript.SetLove(loveMeterPoints);
+         */
+
+
         string nextNodeID = curNode.responses[responseIndex].destinationNode;
         Node nextNode = curDialogue.GetNode(nextNodeID);
         curNode = nextNode;
