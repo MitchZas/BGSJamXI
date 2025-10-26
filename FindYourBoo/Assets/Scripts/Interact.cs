@@ -3,12 +3,22 @@ using UnityEngine;
 public class Interact : MonoBehaviour
 {
     [SerializeField] private GameObject EPrompt;
-    
+    [SerializeField] private GameObject dialogueCanvas;
+    [SerializeField] private PlayerController playerControllerScript;
+    private bool isPressed = false;
+
+    private void Update()
+    {
+        if (isPressed)
+            OpenDialogue();
+    }
+
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             EPrompt.SetActive(true);
+            isPressed = true;
             Debug.Log("Collided");
         }
 
@@ -24,6 +34,16 @@ public class Interact : MonoBehaviour
         {
             EPrompt.SetActive(false);
             Debug.Log("Left");
+        }
+    }
+
+    void OpenDialogue()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            dialogueCanvas.SetActive(true);
+            Debug.Log("Dialogue open");
+            playerControllerScript.moveSpeed = 0;
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.Scripting.APIUpdating;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] public float moveSpeed = 10f;
     private Vector3 move;
     [SerializeField] private Rigidbody rb;
     //private float rotateSpeed = 0.15f;
@@ -22,10 +22,6 @@ public class PlayerController : MonoBehaviour
 
     public void MovePlayer()
     {
-        //Vector3 movement = new Vector3(move.x, 0, move.y);
-
-        //transform.Translate(movement * speed * Time.deltaTime);
-
         rb.linearVelocity = new Vector3(move.x * moveSpeed * Time.deltaTime, move.y * moveSpeed * Time.deltaTime, 0f);
     }
 }
