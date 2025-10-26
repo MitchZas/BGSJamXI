@@ -14,6 +14,7 @@ public class DialogueViewer : MonoBehaviour
     [SerializeField] TMPro.TMP_Text _txtMessage;
     [SerializeField] DialogueController _dialogueController;
     [SerializeField] private GameObject closeDialogueBox;
+    [SerializeField] private PlayerController playerControllerScript;
     DialogueController _controller;
 
     [DllImport("__Internal")]
@@ -63,6 +64,7 @@ public class DialogueViewer : MonoBehaviour
             {
                 responceButton.GetComponentInChildren<TMPro.TMP_Text>().text = (string.Empty);
                 closeDialogueBox.SetActive(true);
+                playerControllerScript.moveSpeed = 200;
             }
 
             responceButton.onClick.AddListener(delegate { OnNodeSelected(currentChoiceIndex); });
