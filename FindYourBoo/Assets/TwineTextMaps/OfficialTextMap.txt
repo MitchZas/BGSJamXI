@@ -1,0 +1,74 @@
+:: StoryTitle
+Oliver Valentine #1
+
+:: UserScript[script]
+
+
+:: UserStylesheet[stylesheet]
+
+
+:: Oliver Valentine: Conversation #1[START]
+Why, hello there, darling. Don’t you look simply…. Ethereal this evening. I saw you from across the room and have been dying to speak to you. 
+[[Thank you. I was dying to speak to you as well. ]]  
+[[You are quite dashing yourself.]]
+[[What the hell is that supposed to mean?]]
+
+:: Candlelight dinner, fine red wine, maybe some relaxing piano music, and end it was a moonlight walk.[[END]]
+Ahhh, a person of good taste. That sounds simply to die for. I hope we can meet again later. 
+
+:: I just don’t accept compliments from weird creeps.
+*Gasps* How dare you insult me! Leave me at once! 
+
+:: I was looking for love, but it’s not looking promising….
+Hmmpf, what is that supposed to mean? You aren’t impressed with Lord Oliver??
+[[Not really….]]
+[[No, it’s not that! I swear! You’re just not really my type.]]
+[[I’m sorry, we got off on the wrong foot. Let’s try that again.]]
+
+:: I’m just looking for someone to have a good time with. See what happens.
+Hmm, fascinating. Well, what would be your ideal “good time”?
+[[Long walk through the cemetery, maybe have a nice picnic under the moonlight.]]
+[[Candlelight dinner, fine red wine, maybe some relaxing piano music, and end it was a moonlight walk.]]
+[[Probably just playing video games and ordering pizzas.]]
+
+:: I’m looking for love.\
+Love you say? So you’re a romantic? What would be your ideal date? 
+[[Long walk through the cemetery, maybe have a nice picnic under the moonlight.]]
+[[Candlelight dinner, fine red wine, maybe some relaxing piano music, and end it was a moonlight walk.]]
+[[Probably just playing video games and ordering pizzas.]]
+
+:: I’m sorry, we got off on the wrong foot. Let’s try that again.
+I’ll give you one more chance. Tell me, what would be your ideal date?
+[[Long walk through the cemetery, maybe have a nice picnic under the moonlight.]]
+[[Candlelight dinner, fine red wine, maybe some relaxing piano music, and end it was a moonlight walk.]]
+[[Probably just playing video games and ordering pizzas.]]
+
+:: Long walk through the cemetery, maybe have a nice picnic under the moonlight.[[END]]
+That does sound lovely. Though perhaps a bit boring. Being surrounded by the dead can be a bit dry as bone. Perhaps we will speak again. 
+
+:: No, it’s not that! I swear! You’re just not really my type.[[END]]
+I am everyone’s type. But I suppose not everyone has taste. 
+
+:: Not really….[[END]]
+Well, good luck finding love! You will clearly need it! 
+
+:: Probably just playing video games and ordering pizzas.[[END]]
+Ugh… perhaps I was wrong about you. Maybe we do not have a connection. 
+
+:: Thank you. I was dying to speak to you as well.\
+Now, what is a creature like you doing in a place like this?
+[[I’m looking for love. ]]
+[[I’m just looking for someone to have a good time with. See what happens.]] 
+[[I was looking for love, but it’s not looking promising….]]
+
+:: What the hell is that supposed to mean?
+Well, I meant it as a compliment, but I can see you are perhaps not capable of understanding such things. 
+[[I’m sorry, we got off on the wrong foot. Let’s try that again.]]
+[[I just don’t accept compliments from weird creeps.]]
+
+:: You are quite dashing yourself.
+*Blushes* I’m beginning to like you already. Now, what is a creature like you doing in a place like this? 
+[[I’m looking for love. ]]
+[[I’m just looking for someone to have a good time with. See what happens.]]
+[[I was looking for love, but it’s not looking promising….]]
+
