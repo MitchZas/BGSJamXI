@@ -44,6 +44,10 @@ public class DialogueObject
 
     public class Dialogue
     {
+        public bool isGood;
+        public bool isNeutral;
+        public bool isBad;
+
         string title;
         Dictionary<string, Node> nodes;
         string titleOfStartNode;
@@ -68,7 +72,7 @@ public class DialogueObject
         public void ParseTwineText(string twineText)
         {
             string[] nodeData = twineText.Split(new string[] { "::" }, StringSplitOptions.None);
-
+            
             bool passedHeader = false;
             const int kIndexOfContentStart = 4;
             for (int i = 0; i < nodeData.Length; i++)
@@ -174,16 +178,19 @@ public class DialogueObject
                         if (curResponse.destinationNode[curResponse.destinationNode.Length - 1] == '+')
                         {
                             curResponse.displayText = "GOOD";
+                            isGood = true;
                             curResponse.destinationNode = curResponse.destinationNode.Remove(curResponse.destinationNode.Length - 1);
                         }
                         else if (curResponse.destinationNode[curResponse.destinationNode.Length - 1] == '=')
                         {
                             curResponse.displayText = "NEUTRAL";
+                            isNeutral = true;
                             curResponse.destinationNode = curResponse.destinationNode.Remove(curResponse.destinationNode.Length - 1);
                         }
                         else if(curResponse.destinationNode[curResponse.destinationNode.Length - 1] == '-')
                         {
                             curResponse.displayText = "BAD";
+                            isBad = true;
                             curResponse.destinationNode = curResponse.destinationNode.Remove(curResponse.destinationNode.Length - 1);
                         }
 
