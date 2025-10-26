@@ -42,7 +42,7 @@ public class DialogueObject : MonoBehaviour
 
     }
 
-    public class Dialogue
+    public class Dialogue: MonoBehaviour
     {
         public bool isGood;
         public bool isNeutral;

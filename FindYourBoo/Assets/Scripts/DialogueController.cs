@@ -6,7 +6,9 @@ using static DialogueObject;
 // INFO: This whole script was ripped from the linked code in the description of Matthew Ventures' video - https://www.youtube.com/watch?v=cmafUgj1cu8&t=319s
 public class DialogueController : MonoBehaviour
 {
-
+    public bool isGood = false;
+    public bool isNeutral = false;
+    public bool isBad = false;
     [SerializeField] TextAsset twineText;
     Dialogue curDialogue;
     Node curNode;
@@ -40,6 +42,10 @@ public class DialogueController : MonoBehaviour
                 curNode.responses[responseIndex].displayText == "NEUTRAL" ? 5 : 0;
             jonathansScript.SetLove(loveMeterPoints);
          */
+
+        isGood = curNode.responses[responseIndex].displayText == "GOOD";
+        isNeutral = curNode.responses[responseIndex].displayText == "NEUTRAL";
+        isBad = curNode.responses[responseIndex].displayText == "BAD";
 
 
         string nextNodeID = curNode.responses[responseIndex].destinationNode;
