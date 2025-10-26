@@ -169,6 +169,24 @@ public class DialogueObject
                             curResponse.displayText = ""; // If message-less, then message is an empty string
                         else
                             curResponse.displayText = curResponseData.Substring(0, destinationStart);
+
+                        // Custom code here, using the displayText
+                        if (curResponse.destinationNode[curResponse.destinationNode.Length - 1] == '+')
+                        {
+                            curResponse.displayText = "GOOD";
+                            curResponse.destinationNode = curResponse.destinationNode.Remove(curResponse.destinationNode.Length - 1);
+                        }
+                        else if (curResponse.destinationNode[curResponse.destinationNode.Length - 1] == '=')
+                        {
+                            curResponse.displayText = "NEUTRAL";
+                            curResponse.destinationNode = curResponse.destinationNode.Remove(curResponse.destinationNode.Length - 1);
+                        }
+                        else if(curResponse.destinationNode[curResponse.destinationNode.Length - 1] == '-')
+                        {
+                            curResponse.displayText = "BAD";
+                            curResponse.destinationNode = curResponse.destinationNode.Remove(curResponse.destinationNode.Length - 1);
+                        }
+
                         curNode.responses.Add(curResponse);
                     }
                 }
