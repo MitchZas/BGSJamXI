@@ -5,7 +5,7 @@ public class StartMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
     
     public void LoadOptions()
@@ -23,6 +23,6 @@ public class StartMenu : MonoBehaviour
 
     public void CreditsScreen()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 }
