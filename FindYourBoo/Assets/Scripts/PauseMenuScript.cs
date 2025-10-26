@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenuScript : MonoBehaviour
 {
     public static bool _gameIsPaused = false;
     public GameObject _pauseMenuUI;
     public GameObject DialogueCloseCanvas;
+    [SerializeField] Image lastFaceImage;
 
     // Update is called once per frame
     void Update()
@@ -55,5 +57,14 @@ public class PauseMenuScript : MonoBehaviour
     public void CloseDialogueBox()
     {
         DialogueCloseCanvas.SetActive(false);
+
+        if (lastFaceImage.sprite.name == "bachelor_number_1_happy_0")
+        {
+            SceneManager.LoadScene(4);
+        }
+        else
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 }

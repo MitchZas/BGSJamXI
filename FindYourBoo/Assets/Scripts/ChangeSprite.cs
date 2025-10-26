@@ -9,11 +9,15 @@ public class ChangeSprite : MonoBehaviour
 {
     [SerializeField] public DialogueController dControllerScript;
 
+    [SerializeField] BooCalculator booCalcnumber;
+
     [SerializeField] private Image goodImage;
     [SerializeField] private Image badImage;
+    [SerializeField] private Image neutralImage;
 
-    [SerializeField] private Sprite goodSprite;
-    [SerializeField] private Sprite badSprite;
+    [SerializeField] public Sprite goodSprite;
+    [SerializeField] public Sprite badSprite;
+    [SerializeField] public Sprite neutralSprite;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,14 +27,19 @@ public class ChangeSprite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(dControllerScript.isGood)
+       if(booCalcnumber.booNumber >=5)
         {
             goodImage.sprite = goodSprite;
         }
 
-        if (dControllerScript.isBad)
+        else if (booCalcnumber.booNumber < 0)
         {
             badImage.sprite = badSprite;
+        }
+
+        else
+        {
+            neutralImage.sprite = neutralSprite;
         }
     }
 }

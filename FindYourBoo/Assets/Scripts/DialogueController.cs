@@ -6,9 +6,13 @@ using static DialogueObject;
 // INFO: This whole script was ripped from the linked code in the description of Matthew Ventures' video - https://www.youtube.com/watch?v=cmafUgj1cu8&t=319s
 public class DialogueController : MonoBehaviour
 {
+    [SerializeField] BooCalculator booCalculatorScript;
+    
     public bool isGood = false;
     public bool isNeutral = false;
     public bool isBad = false;
+
+    [SerializeField] BooCalculator booCalcuatorScript;
     [SerializeField] TextAsset twineText;
     Dialogue curDialogue;
     Node curNode;
@@ -35,18 +39,13 @@ public class DialogueController : MonoBehaviour
 
     public void ChooseResponse(int responseIndex)
     {
-        // TODO: This is where the response is chosen and I need to call the SetLove() function from Jonathan's code.
-        // Before you do any of the un-commented out code below, implement this code:
-        /*
-            int loveMeterPoints = curNode.responses[responseIndex].displayText == "GOOD" ? 10 : 
-                curNode.responses[responseIndex].displayText == "NEUTRAL" ? 5 : 0;
-            jonathansScript.SetLove(loveMeterPoints);
-         */
+        int loveMeterPoints = curNode.responses[responseIndex].displayText == "GOOD" ? 5 : 
+                curNode.responses[responseIndex].displayText == "NEUTRAL" ? 0 : -5;
+            booCalcuatorScript.SetLove(loveMeterPoints);
 
         isGood = curNode.responses[responseIndex].displayText == "GOOD";
         isNeutral = curNode.responses[responseIndex].displayText == "NEUTRAL";
         isBad = curNode.responses[responseIndex].displayText == "BAD";
-
 
         string nextNodeID = curNode.responses[responseIndex].destinationNode;
         Node nextNode = curDialogue.GetNode(nextNodeID);
