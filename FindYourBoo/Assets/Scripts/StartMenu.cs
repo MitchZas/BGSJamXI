@@ -21,4 +21,9 @@ public class StartMenu : MonoBehaviour
         Application.Quit();
         //Debug.Log("Quitting Game");
     }
+
+    public void CreditsScreen()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
