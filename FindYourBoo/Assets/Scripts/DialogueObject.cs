@@ -60,6 +60,7 @@ public class DialogueObject
 
         public Node GetStartNode()
         {
+            Debug.Log(titleOfStartNode);
             UnityEngine.Assertions.Assert.IsNotNull(titleOfStartNode);
             return nodes[titleOfStartNode];
         }

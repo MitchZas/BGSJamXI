@@ -1,0 +1,53 @@
+:: StoryTitle
+BGS Game Jam
+
+:: UserScript[script]
+
+
+:: UserStylesheet[stylesheet]
+
+
+:: Intro[START]
+How are you?
+[[I am well]]
+[[I hate my life]]
+[[It's Halloween, how can I not be great!?]]
+
+:: Damn, rude af[END]
+Ooh you're a sassy one aren't you? I like that
+[[x]]
+
+:: Gross, fuck no[END]
+Ouch
+[[x]]
+
+:: Hell yeah![END]
+Nice, why don't we go somewhere else ;)
+[[x]]
+
+:: I am well
+Cool, lame ass response though
+[[Sorry, I'm kind of a boring person tbh]]
+[[Damn, rude af]]
+
+:: I hate my life
+Same bro
+[[Well... you wanna hate our lives together?]]
+[[There can only be one of us who hates our life, pass]]
+
+:: It's Halloween, how can I not be great!?
+HELL YEAH, you wanna go on a date?
+[[Hell yeah!]]
+[[Gross, fuck no]]
+
+:: Sorry, I'm kind of a boring person tbh[END]
+Honestly, I feel that
+[[x]]
+
+:: There can only be one of us who hates our life, pass[END]
+Fair enough
+[[x]]
+
+:: Well... you wanna hate our lives together?[END]
+Eh, why not
+[[x]]
