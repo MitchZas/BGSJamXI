@@ -5,7 +5,7 @@ using UnityEngine;
 
 // INFO: This whole script was ripped from the linked code in the description of Matthew Ventures' video - https://www.youtube.com/watch?v=cmafUgj1cu8&t=319s
 
-public class DialogueObject
+public class DialogueObject : MonoBehaviour
 {
     private const string kStart = "START";
     private const string kEnd = "END";

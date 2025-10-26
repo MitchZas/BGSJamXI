@@ -7,7 +7,6 @@ using static DialogueObject;
 public class ChangeSprite : MonoBehaviour
 {
     [SerializeField] public DialogueObject dialogueObjectScript;
-    [SerializeField] private PlayerController playerControllerScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
