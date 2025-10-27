@@ -213,3 +213,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EPrompt: {fileID: 931521981371653860}
+  dialogueCanvas: {fileID: 0}
+  playerControllerScript: {fileID: 0}
