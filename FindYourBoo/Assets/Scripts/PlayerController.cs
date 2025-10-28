@@ -2,20 +2,20 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
 using UnityEngine.Scripting.APIUpdating;
+using Unity.VisualScripting;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] public float moveSpeed = 10f;
     private Vector3 move;
     [SerializeField] private Rigidbody rb;
-    //private float rotateSpeed = 0.15f;
 
     public void OnMove(InputAction.CallbackContext context)
     {
         move = context.ReadValue<Vector2>();
     }
-
-    private void Update()
+    
+    private void FixedUpdate()
     {
         MovePlayer();
     }
