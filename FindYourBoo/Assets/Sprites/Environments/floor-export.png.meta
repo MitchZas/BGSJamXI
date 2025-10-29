@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d9b1a2c07e6393d4b91e4571763813e1
+guid: 2b2e9163c69e813469eab7493b32885b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2273649962672406023
-    second: LeftWall2_0
+      213: 8138636811840731018
+    second: floor-export_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,9 +49,9 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.75}
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,23 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LeftWall2_0
+      name: floor-export_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 15
-        width: 34
-        height: 34
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f1c45fb76f5270e0800000000000000
-      internalID: -2273649962672406023
+      spriteID: a873fad5f0f32f070800000000000000
+      internalID: 8138636811840731018
       vertices: []
       indices: 
       edges: []
@@ -165,7 +165,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LeftWall2_0: -2273649962672406023
+      floor-export_0: 8138636811840731018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
