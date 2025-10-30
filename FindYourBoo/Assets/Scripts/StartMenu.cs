@@ -1,13 +1,25 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
-    public void PlayGame()
+    
+    void Start()
+    {
+        StartCoroutine(WaitForIntro());
+    }
+
+    public void InitialPlayGame()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void PlayAgain()
     {
         SceneManager.LoadScene(1);
     }
-    
+
     public void LoadOptions()
     {
         // TODO: Add back in when we have options
@@ -25,4 +37,11 @@ public class StartMenu : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+
+    IEnumerator WaitForIntro()
+    {
+        yield return new WaitForSeconds(37);
+        SceneManager.LoadScene(1);
+    }
+
 }
